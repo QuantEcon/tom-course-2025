@@ -1,5 +1,7 @@
 name: Build Cache [using jupyter-book]
 on:
+  push:
+    - main
   schedule:
     # Execute cache weekly at 3am on Monday
     - cron:  '0 3 * * 1'
