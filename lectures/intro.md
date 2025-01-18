@@ -9,9 +9,9 @@ kernelspec:
   name: python3
 ---
 
-# Tom's Course
+# TITLE OF PROJECT
 
-This website presents lectures for Tom's Course 2025
+This website presents lectures for {{ MORE INFO }}
 
 ```{tableofcontents}
 ```
