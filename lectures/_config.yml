@@ -1,7 +1,7 @@
-title: # TITLE REQUIRED #
-author: # AUTHOR REQUIRED #
+title: Tom's Course
+author: Thomas J. Sargent
 logo: _static/qe-logo-large.png
-description: # DESCRIPTION REQUIRED #
+description: A course for Tom Sargent 2025
 
 parse:
   myst_enable_extensions:
@@ -24,14 +24,15 @@ execute:
 bibtex_bibfiles:
    - _static/quant-econ.bib
 
-# latex:
-#    latex_documents:
-#       targetname: {{ NAME OF PDF DOCUMENT }}
+latex:
+   latex_documents:
+      targetname: tom-course-2025.tex
 
 sphinx:
   extra_extensions: [sphinx_multitoc_numbering, sphinxext.rediraffe, sphinx_tojupyter, sphinxcontrib.youtube, sphinx.ext.todo, sphinx_exercise, sphinx_proof, sphinx_togglebutton, sphinx.ext.intersphinx, sphinx_reredirects]
   config:
-    linkcheck_ignore: []  # false-positive links
+    # false-positive links
+    linkcheck_ignore: ['https://online.stat.psu.edu/stat415/book/export/html/834']
     bibtex_reference_style: author_year
     nb_mime_priority_overrides: [
        # HTML
@@ -69,19 +70,19 @@ sphinx:
     html_static_path: ['_static']
     html_theme_options:
       authors:
-        - name: # AUTHOR REQUIRED #
-          url: # URL FOR AUTHOR WEBSITE #
+        - name: Thomas J. Sargent
+          url: http://www.tomsargent.com/
       header_organisation_url: https://quantecon.org
       header_organisation: QuantEcon
-      repository_url: # REPOSITORY URL REQUIRED #
-      # nb_repository_url: 
+      repository_url: https://github.com/QuantEcon/tom-course-2025
+      # nb_repository_url: https://github.com/QuantEcon/lecture-python.notebooks
       twitter: quantecon
       twitter_logo_url: https://assets.quantecon.org/img/qe-twitter-logo.png
       og_logo_url: https://assets.quantecon.org/img/qe-og-logo.png
-      description: 
+      description: A course for Tom Sargent 2025
       keywords: Python, QuantEcon, Quantitative Economics, Economics, Sloan, Alfred P. Sloan Foundation, Tom J. Sargent, John Stachurski
       # analytics:
-      #   google_analytics_id: 
+      #   google_analytics_id: G-J0SMYR4SG3
       launch_buttons:
         colab_url                 : https://colab.research.google.com
     intersphinx_mapping: 
@@ -97,6 +98,16 @@ sphinx:
     # Local Redirects
     rediraffe_redirects:
       index_toc.md: intro.md
+    # Remote Redirects
+    redirects:
+      heavy_tails:   https://intro.quantecon.org/heavy_tails.html
+      ar1_processes: https://intro.quantecon.org/ar1_processes.html
+      geom_series:   https://intro.quantecon.org/geom_series.html
+      lp_intro:      https://intro.quantecon.org/lp_intro.html
+      short_path:    https://intro.quantecon.org/short_path.html
+      schelling:     https://intro.quantecon.org/schelling.html
+      scalar_dynam:  https://intro.quantecon.org/scalar_dynam.html
+      complex_and_trig: https://intro.quantecon.org/complex_and_trig.html
     # tojupyter_static_file_path: ["source/_static", "_static"]
     # tojupyter_target_html: true
     # tojupyter_urlpath: "https://python.quantecon.org/"

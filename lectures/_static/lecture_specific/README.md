@@ -1,1 +1,0 @@
-This folder contains lecture specific static files such as figures
