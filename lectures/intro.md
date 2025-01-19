@@ -9,9 +9,13 @@ kernelspec:
   name: python3
 ---
 
-# Tom's Course
+# Econ GA-3002, New York University
 
-This website presents lectures for Tom's Course 2025
+ Spring 2025, Topics in Computational Economics
+
+ Teachers: Alfred Galichon and Thomas Sargent 
+ 
+ This website presents selected QuantEcon lectures for Tom's part of the class
 
 ```{tableofcontents}
 ```
