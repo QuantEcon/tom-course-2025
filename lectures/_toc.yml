@@ -22,7 +22,9 @@ parts:
   - file: calvo_machine_learn
   - file: dyn_stack
   - file: calvo
-  - file: calvo_abreu 
+  - file: calvo_abreu
+  - file: robustness
+  - file: rob_markov_perf
 - caption: Other
   chapters:
   - file: zreferences
