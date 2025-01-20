@@ -25,7 +25,7 @@ parts:
   - file: calvo_abreu
   - file: robustness
   - file: rob_markov_perf
-- caption: Additional Material
+- caption: QuantEcon Reference Materials
   chapters:
   - file: aiyagari
   - file: amss
