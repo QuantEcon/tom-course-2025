@@ -22,7 +22,22 @@ parts:
   - file: calvo_machine_learn
   - file: dyn_stack
   - file: calvo
-  - file: calvo_abreu 
+  - file: calvo_abreu
+- caption: Additional Material
+  chapters:
+  - file: amss
+  - file: classical_filtering
+  - file: hs_invertibility_example
+  - file: kalman
+  - file: la_neumann_remarks
+  - file: la_mcalc
+  - file: la_linear_map
+  - file: linear_models
+  - file: lm_fgs
+  - file: lqramsey
+  - file: optgrowth
+  - file: opt_tax_recur
+  - file: re_with_feedback
 - caption: Other
   chapters:
   - file: zreferences
