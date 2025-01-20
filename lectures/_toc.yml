@@ -27,19 +27,28 @@ parts:
   - file: rob_markov_perf
 - caption: Additional Material
   chapters:
+  - file: aiyagari
   - file: amss
+  - file: amss2
+  - file: amss3
+  - file: cake_eating_problem
+  - file: cake_eating_numerical
   - file: classical_filtering
   - file: hs_invertibility_example
+  - file: jv
   - file: kalman
-  - file: la_neumann_remarks
-  - file: la_mcalc
-  - file: la_linear_map
   - file: linear_models
-  - file: lm_fgs
   - file: lqramsey
+  - file: lu_tricks
+  - file: mccall_model
+  - file: mccall_model_with_separation
+  - file: mccall_fitted_vfi
   - file: optgrowth
+  - file: optgrowth_fast
   - file: opt_tax_recur
+  - file: rational_expectations
   - file: re_with_feedback
+  - file: samuelson
 - caption: Other
   chapters:
   - file: zreferences
