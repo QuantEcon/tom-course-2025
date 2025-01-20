@@ -23,6 +23,8 @@ parts:
   - file: dyn_stack
   - file: calvo
   - file: calvo_abreu
+  - file: robustness
+  - file: rob_markov_perf
 - caption: Additional Material
   chapters:
   - file: amss
