@@ -347,7 +347,7 @@ X_t = \sum_{j=1}^t w_j + X_0
 <section id="assumptions">
 <h3>Assumptions<a class="headerlink" href="#assumptions" title="Permalink to this heading">#</a></h3>
 <p>For the remainder of this lecture, we follow Friedman and Hall in assuming that <span class="math notranslate nohighlight">\((1 + r)^{-1} = \beta\)</span>.</p>
-<p>Regarding the endowment process, we assume it has the <span class="xref std std-doc">state-space representation</span></p>
+<p>Regarding the endowment process, we assume it has the <a class="reference internal" href="linear_models.html"><span class="doc">state-space representation</span></a></p>
 <div class="math notranslate nohighlight" id="equation-sprob15ab">
 <span class="eqno">(57)<a class="headerlink" href="#equation-sprob15ab" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{aligned}
     z_{t+1} &amp; = A z_t + C w_{t+1}
@@ -446,7 +446,7 @@ programming does for us behind the scenes.</p>
 <p>It is plausible that current decisions <span class="math notranslate nohighlight">\(c_t\)</span> and <span class="math notranslate nohighlight">\(b_{t+1}\)</span> should
 be expressible as functions of <span class="math notranslate nohighlight">\(z_t\)</span> and <span class="math notranslate nohighlight">\(b_t\)</span>.</p>
 <p>This is indeed the case.</p>
-<p>In fact, from <span class="xref std std-ref">this discussion</span>, we see that</p>
+<p>In fact, from <a class="reference internal" href="linear_models.html#lm-fgs"><span class="std std-ref">this discussion</span></a>, we see that</p>
 <div class="math notranslate nohighlight">
 \[
 \sum_{j=0}^\infty \beta^j \mathbb{E}_t [y_{t+j}]
@@ -529,7 +529,7 @@ x_t =
   x_{t+1} &amp; = \tilde A x_t + \tilde C w_{t+1} \\
   \tilde y_t &amp; = \tilde U x_t
 \end{aligned}\end{split}\]</div>
-<p>We can use the following formulas from <span class="xref std std-doc">linear state space models</span> to compute population mean <span class="math notranslate nohighlight">\(\mu_t = \mathbb{E}    x_t\)</span> and covariance <span class="math notranslate nohighlight">\(\Sigma_t := \mathbb{E} [ (x_t - \mu_t) (x_t - \mu_t)']\)</span></p>
+<p>We can use the following formulas from <a class="reference internal" href="linear_models.html"><span class="doc">linear state space models</span></a> to compute population mean <span class="math notranslate nohighlight">\(\mu_t = \mathbb{E}    x_t\)</span> and covariance <span class="math notranslate nohighlight">\(\Sigma_t := \mathbb{E} [ (x_t - \mu_t) (x_t - \mu_t)']\)</span></p>
 <div class="math notranslate nohighlight" id="equation-lss-mut-perm-income">
 <span class="eqno">(67)<a class="headerlink" href="#equation-lss-mut-perm-income" title="Permalink to this equation">#</a></span>\[\mu_{t+1} = \tilde A \mu_t
 \quad \text{with} \quad \mu_0 \text{ given}\]</div>
@@ -622,7 +622,7 @@ C =
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/4e1e1c8e18af8f040230fe967bb3e38cdee6bc242cdbe3c9a501446ffaddd9c4.png" src="_images/4e1e1c8e18af8f040230fe967bb3e38cdee6bc242cdbe3c9a501446ffaddd9c4.png" />
+<img alt="_images/14e73fa3ed542dac2152f553ea7ea82c8e89de0a61cabed4ada14f33ffab938c.png" src="_images/14e73fa3ed542dac2152f553ea7ea82c8e89de0a61cabed4ada14f33ffab938c.png" />
 </div>
 </div>
 <p>Observe that consumption is considerably smoother than income.</p>
@@ -645,7 +645,7 @@ C =
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/c4148895de82e16dcfd4cef1ec583bbe445fb241df3145a840d06d49812ca2e7.png" src="_images/c4148895de82e16dcfd4cef1ec583bbe445fb241df3145a840d06d49812ca2e7.png" />
+<img alt="_images/9eb144156a590af77d53dbd11bbf858688485757df85329bf024fd7c7d92c177.png" src="_images/9eb144156a590af77d53dbd11bbf858688485757df85329bf024fd7c7d92c177.png" />
 </div>
 </div>
 </section>
@@ -674,7 +674,7 @@ c_{t+1} = (1-\beta)\sum_{j=0}^\infty \beta^j  \mathbb{E}_{t+1} [y_{t+j+1}] -
 <span class="eqno">(71)<a class="headerlink" href="#equation-sprob7aa" title="Permalink to this equation">#</a></span>\[b_t = \sum_{j=0}^\infty \beta^j \mathbb{E}_t [y_{t+j}] - {1 \over 1-\beta} c_t\]</div>
 <p>Equation <a class="reference internal" href="#equation-sprob7aa">(71)</a> asserts that the consumer’s debt due at <span class="math notranslate nohighlight">\(t\)</span> equals the expected present value of its endowment minus the expected present value of its consumption stream.</p>
 <p>A high debt thus indicates a large expected present value of surpluses <span class="math notranslate nohighlight">\(y_t - c_t\)</span>.</p>
-<p>Recalling again our discussion on <span class="xref std std-ref">forecasting geometric sums</span>, we have</p>
+<p>Recalling again our discussion on <a class="reference internal" href="linear_models.html#lm-fgs"><span class="std std-ref">forecasting geometric sums</span></a>, we have</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
@@ -727,7 +727,7 @@ c_{t+1} = (1-\beta)\sum_{j=0}^\infty \beta^j  \mathbb{E}_{t+1} [y_{t+j+1}] -
 <section id="cross-sectional-implications">
 <h3>Cross-Sectional Implications<a class="headerlink" href="#cross-sectional-implications" title="Permalink to this heading">#</a></h3>
 <p>Consider again <a class="reference internal" href="#equation-sprob16abcd">(72)</a>, this time in light of our discussion of
-distribution dynamics in the <span class="xref std std-doc">lecture on linear systems</span>.</p>
+distribution dynamics in the <a class="reference internal" href="linear_models.html"><span class="doc">lecture on linear systems</span></a>.</p>
 <p>The dynamics of <span class="math notranslate nohighlight">\(c_t\)</span> are given by</p>
 <div class="math notranslate nohighlight" id="equation-pi-crw">
 <span class="eqno">(75)<a class="headerlink" href="#equation-pi-crw" title="Permalink to this equation">#</a></span>\[c_{t+1} = c_t + (1-\beta) U  (I-\beta A)^{-1} C w_{t+1}\]</div>
@@ -934,7 +934,7 @@ permanent income shocks.</p>
 </ul>
 <p>In the same discussion in <span id="id16">[<a class="reference internal" href="zreferences.html#id187" title="L Ljungqvist and T J Sargent. Recursive Macroeconomic Theory. MIT Press, 4 edition, 2018.">Ljungqvist and Sargent, 2018</a>]</span> it is shown that <span class="math notranslate nohighlight">\(K \in [0,1]\)</span> and that <span class="math notranslate nohighlight">\(K\)</span> increases as <span class="math notranslate nohighlight">\(\sigma_1/\sigma_2\)</span> does.</p>
 <p>In other words, <span class="math notranslate nohighlight">\(K\)</span> increases as the ratio of the standard deviation of the permanent shock to that of the transitory shock increases.</p>
-<p>Please see  <span class="xref std std-doc">first look at the Kalman filter</span>.</p>
+<p>Please see  <a class="reference internal" href="kalman.html"><span class="doc">first look at the Kalman filter</span></a>.</p>
 <p>Applying formulas <a class="reference internal" href="#equation-sprob16abcd">(72)</a> implies</p>
 <div class="math notranslate nohighlight" id="equation-consexample2">
 <span class="eqno">(82)<a class="headerlink" href="#equation-consexample2" title="Permalink to this equation">#</a></span>\[c_{t+1} - c_t = [1-\beta(1-K) ] a_{t+1}\]</div>
@@ -1157,6 +1157,133 @@ u'(c_0) = \beta R  \,\mathbb{E}_0 [u'(c_1)]
  <li class="toctree-l1">
   <a class="reference internal" href="calvo_abreu.html">
    Sustainable Plans for a Calvo Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="robustness.html">
+   Robustness
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rob_markov_perf.html">
+   Robust Markov Perfect Equilibrium
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  QuantEcon Reference Materials
+ </span>
+</p>
+<ul class="nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="aiyagari.html">
+   The Aiyagari Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="amss.html">
+   Optimal Taxation without State-Contingent Debt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="amss2.html">
+   Fluctuating Interest Rates Deliver Fiscal Insurance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="amss3.html">
+   Fiscal Risk and Government Debt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cake_eating_problem.html">
+   Cake Eating I: Introduction to Optimal Saving
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cake_eating_numerical.html">
+   Cake Eating II: Numerical Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="classical_filtering.html">
+   Classical Prediction and Filtering With Linear Algebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="hs_invertibility_example.html">
+   Shock Non Invertibility
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jv.html">
+   Job Search VI: On-the-Job Search
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kalman.html">
+   A First Look at the Kalman Filter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="linear_models.html">
+   Linear State Space Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lqramsey.html">
+   Optimal Taxation in an LQ Economy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lu_tricks.html">
+   Classical Control with Linear Algebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mccall_model.html">
+   Job Search I: The McCall Search Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mccall_model_with_separation.html">
+   Job Search II: Search and Separation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mccall_fitted_vfi.html">
+   Job Search III: Fitted Value Function Iteration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="optgrowth.html">
+   Optimal Growth I: The Stochastic Optimal Growth Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="optgrowth_fast.html">
+   Optimal Growth II: Accelerating the Code with Numba
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="opt_tax_recur.html">
+   Optimal Taxation with State-Contingent Debt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rational_expectations.html">
+   Rational Expectations Equilibrium
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="re_with_feedback.html">
+   Stability in Linear Rational Expectations Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="samuelson.html">
+   Samuelson Multiplier-Accelerator
   </a>
  </li>
 </ul>
