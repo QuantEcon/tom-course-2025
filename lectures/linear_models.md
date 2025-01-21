@@ -794,7 +794,7 @@ for i in range(I):
     ensemble_mean = ensemble_mean + y
 
 ensemble_mean = ensemble_mean / I
-ax.plot(ensemble_mean, color='b', lw=2, alpha=0.8, label='$\\bar y_t$')
+ax.plot(ensemble_mean, color='b', lw=2, alpha=0.8, label=r'$\bar y_t$')
 m = ar.moment_sequence()
 
 population_means = []
@@ -802,7 +802,7 @@ for t in range(T):
     μ_x, μ_y, Σ_x, Σ_y = next(m)
     population_means.append(float(μ_y))
 
-ax.plot(population_means, color='g', lw=2, alpha=0.8, label='$G\mu_t$')
+ax.plot(population_means, color='g', lw=2, alpha=0.8, label=r'$G\mu_t$')
 ax.set_ylim(ymin, ymax)
 ax.set_xlabel('time', fontsize=12)
 ax.set_ylabel('$y_t$', fontsize=12)
