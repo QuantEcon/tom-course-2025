@@ -824,7 +824,7 @@ consumption can be simulated via <a class="reference internal" href="#equation-l
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/dedb8396d018b2840c6bc25144eda71ec42631d3f8da27993ebc18035be2a977.png" src="_images/dedb8396d018b2840c6bc25144eda71ec42631d3f8da27993ebc18035be2a977.png" />
+<img alt="_images/7b73e67860a08109097180dd9264b3d89445e261743890f6075a1b3cdea564a8.png" src="_images/7b73e67860a08109097180dd9264b3d89445e261743890f6075a1b3cdea564a8.png" />
 </div>
 </div>
 <p>The top panel shows the time path of consumption <span class="math notranslate nohighlight">\(c_t\)</span> and income <span class="math notranslate nohighlight">\(y_t\)</span> in the simulation.</p>
@@ -886,7 +886,7 @@ relatively more weight on later consumption values.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d53d61c6c80dd651ed961aa6be644f5d67441d27dc0bb87fc0f50c1b1a1374c7.png" src="_images/d53d61c6c80dd651ed961aa6be644f5d67441d27dc0bb87fc0f50c1b1a1374c7.png" />
+<img alt="_images/b96f85ad4423808684fcf272caa7da1f204ac820451ac7e5edd1013ad15babdb.png" src="_images/b96f85ad4423808684fcf272caa7da1f204ac820451ac7e5edd1013ad15babdb.png" />
 </div>
 </div>
 <p>We now have a slowly rising consumption stream and a hump-shaped build-up
@@ -1313,7 +1313,7 @@ y_t = m_1 t + m_2 t^2 + \sigma w_{t+1}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/88645676d8576a908985ceea60d897fc6c93f3a10d87c056b9cf41ab2813ee14.png" src="_images/88645676d8576a908985ceea60d897fc6c93f3a10d87c056b9cf41ab2813ee14.png" />
+<img alt="_images/301e0f10b849d6d307d93d0831397e322e5ec317a0995a4b39ff374f545fe56d.png" src="_images/301e0f10b849d6d307d93d0831397e322e5ec317a0995a4b39ff374f545fe56d.png" />
 </div>
 </div>
 </section>
@@ -1454,7 +1454,7 @@ the lecture.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/6ac9df2b9efa054d96ed7577cbc9857fb7d13f4f3852491ed77e2ea3beda05d2.png" src="_images/6ac9df2b9efa054d96ed7577cbc9857fb7d13f4f3852491ed77e2ea3beda05d2.png" />
+<img alt="_images/5487c8136d4f0574497c16e743fa10f6211533055951b1c6f41d87d23bd81a11.png" src="_images/5487c8136d4f0574497c16e743fa10f6211533055951b1c6f41d87d23bd81a11.png" />
 </div>
 </div>
 </section>
@@ -1554,20 +1554,14 @@ function, which we repeat here for convenience:</p>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">,</span> <span class="s1">&#39;k-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\bar q_t$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$q_t$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">ncol</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="o">**</span><span class="n">legend_args</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;dynamics with $\gamma = </span><span class="si">{</span><span class="n">γ</span><span class="si">}</span><span class="s1">$&#39;</span>
+<span class="n">s</span> <span class="o">=</span> <span class="sa">fr</span><span class="s1">&#39;dynamics with $\gamma = </span><span class="si">{</span><span class="n">γ</span><span class="si">}</span><span class="s1">$&#39;</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">q_bar</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">s</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;&gt;:52: SyntaxWarning: invalid escape sequence &#39;\g&#39;
-&lt;&gt;:52: SyntaxWarning: invalid escape sequence &#39;\g&#39;
-/tmp/ipykernel_558/4055912929.py:52: SyntaxWarning: invalid escape sequence &#39;\g&#39;
-  s = f&#39;dynamics with $\gamma = {γ}$&#39;
-</pre></div>
-</div>
-<img alt="_images/3d9f82ff7942583f4162249f18a4accd79f2d443c58c640ee0e93f9ddac0ca92.png" src="_images/3d9f82ff7942583f4162249f18a4accd79f2d443c58c640ee0e93f9ddac0ca92.png" />
+<img alt="_images/5a40ea4710a3fcc7a5053f0513db995433d0517ef6b3b710f3e3e6d45793c383.png" src="_images/5a40ea4710a3fcc7a5053f0513db995433d0517ef6b3b710f3e3e6d45793c383.png" />
 </div>
 </div>
 </section>

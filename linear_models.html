@@ -545,7 +545,7 @@ y_{-3} = 1
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/354f7b8b2a0072f014605bdef807d02db626c989682044e8de64f2b46154218c.png" src="_images/354f7b8b2a0072f014605bdef807d02db626c989682044e8de64f2b46154218c.png" />
+<img alt="_images/2f24e12129fd44e7c4daec98800cc502d2dc75516014e9907f666d9ab06dc7c4.png" src="_images/2f24e12129fd44e7c4daec98800cc502d2dc75516014e9907f666d9ab06dc7c4.png" />
 </div>
 </div>
 </section>
@@ -876,7 +876,7 @@ shocks each time.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/e73556c308d55fe3bd4dec06c45a3bd573aaeb67ae1cb49d8cdd6f0b1a6e81ce.png" src="_images/e73556c308d55fe3bd4dec06c45a3bd573aaeb67ae1cb49d8cdd6f0b1a6e81ce.png" />
+<img alt="_images/45eb28114f6f667abc4888ea218d4a41965cbaaa3ef9e832ce5fff7970322287.png" src="_images/45eb28114f6f667abc4888ea218d4a41965cbaaa3ef9e832ce5fff7970322287.png" />
 </div>
 </div>
 <p>In the right-hand figure, these values are converted into a rotated histogram
@@ -890,7 +890,7 @@ that shows relative frequencies from our sample of 20 <span class="math notransl
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/811ab08271f7f8bf8b2072d2c145a034873664089b8a6b29f48a526ea79941c7.png" src="_images/811ab08271f7f8bf8b2072d2c145a034873664089b8a6b29f48a526ea79941c7.png" />
+<img alt="_images/7f9bc0e4ee153f8a6cb55b1932ccf05b57608142196423d6e5bfac57551a4f03.png" src="_images/7f9bc0e4ee153f8a6cb55b1932ccf05b57608142196423d6e5bfac57551a4f03.png" />
 </div>
 </div>
 <p>Let’s now try with 500,000 observations, showing only the histogram (without rotation)</p>
@@ -920,11 +920,11 @@ that shows relative frequencies from our sample of 20 <span class="math notransl
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_457/1034809053.py:10: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_401/1034809053.py:10: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
   f_y = norm(loc=float(mu_y), scale=float(np.sqrt(Sigma_y)))
 </pre></div>
 </div>
-<img alt="_images/7ae2a429cdc57cde6d3c87b0243f1865822cf942fbeaa3e4e0b07a280cb6c3bc.png" src="_images/7ae2a429cdc57cde6d3c87b0243f1865822cf942fbeaa3e4e0b07a280cb6c3bc.png" />
+<img alt="_images/27d42021e57d02aa87122d809233ae84702831a11268cafc7fb31bb9e95fe0f7.png" src="_images/27d42021e57d02aa87122d809233ae84702831a11268cafc7fb31bb9e95fe0f7.png" />
 </div>
 </div>
 <p>The black line is the population density of <span class="math notranslate nohighlight">\(y_T\)</span> calculated from <a class="reference internal" href="#equation-lss-mgs-y">(347)</a>.</p>
@@ -968,7 +968,7 @@ and the sample size is relatively small (<span class="math notranslate nohighlig
     <span class="n">ensemble_mean</span> <span class="o">=</span> <span class="n">ensemble_mean</span> <span class="o">+</span> <span class="n">y</span>
 
 <span class="n">ensemble_mean</span> <span class="o">=</span> <span class="n">ensemble_mean</span> <span class="o">/</span> <span class="n">I</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ensemble_mean</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$</span><span class="se">\\</span><span class="s1">bar y_t$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ensemble_mean</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\bar y_t$&#39;</span><span class="p">)</span>
 <span class="n">m</span> <span class="o">=</span> <span class="n">ar</span><span class="o">.</span><span class="n">moment_sequence</span><span class="p">()</span>
 
 <span class="n">population_means</span> <span class="o">=</span> <span class="p">[]</span>
@@ -976,7 +976,7 @@ and the sample size is relatively small (<span class="math notranslate nohighlig
     <span class="n">μ_x</span><span class="p">,</span> <span class="n">μ_y</span><span class="p">,</span> <span class="n">Σ_x</span><span class="p">,</span> <span class="n">Σ_y</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
     <span class="n">population_means</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">μ_y</span><span class="p">))</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">population_means</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$G\mu_t$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">population_means</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$G\mu_t$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;$y_t$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
@@ -986,15 +986,11 @@ and the sample size is relatively small (<span class="math notranslate nohighlig
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;&gt;:26: SyntaxWarning: invalid escape sequence &#39;\m&#39;
-&lt;&gt;:26: SyntaxWarning: invalid escape sequence &#39;\m&#39;
-/tmp/ipykernel_457/3206934063.py:26: SyntaxWarning: invalid escape sequence &#39;\m&#39;
-  ax.plot(population_means, color=&#39;g&#39;, lw=2, alpha=0.8, label=&#39;$G\mu_t$&#39;)
-/tmp/ipykernel_457/3206934063.py:24: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_401/160941729.py:24: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
   population_means.append(float(μ_y))
 </pre></div>
 </div>
-<img alt="_images/28e2eb3dc1e5b6f6edbfcb1fe473feda22cc5af47f047abb98462f07e455cfd9.png" src="_images/28e2eb3dc1e5b6f6edbfcb1fe473feda22cc5af47f047abb98462f07e455cfd9.png" />
+<img alt="_images/cf87d8b17145b1a114440102d6f1815540fa370f4886516e97a6f1f13f58242f.png" src="_images/cf87d8b17145b1a114440102d6f1815540fa370f4886516e97a6f1f13f58242f.png" />
 </div>
 </div>
 <p>The ensemble mean for <span class="math notranslate nohighlight">\(x_t\)</span> is</p>
@@ -1114,7 +1110,7 @@ p(x_{t+1} \,|\, x_t) = N(Ax_t, C C')
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/6d041a4d869a946d22cd4d90de71b796589bc2e4e532b31130ee15f6b0c9cf51.png" src="_images/6d041a4d869a946d22cd4d90de71b796589bc2e4e532b31130ee15f6b0c9cf51.png" />
+<img alt="_images/e2f818f3ea43f1e1237f31e7dfb856bcdd2499bc128091d20d7751fdac588a6e.png" src="_images/e2f818f3ea43f1e1237f31e7dfb856bcdd2499bc128091d20d7751fdac588a6e.png" />
 </div>
 </div>
 <p>Note how the time series “settle down” in the sense that the distributions at
@@ -1158,7 +1154,7 @@ x_{t+1} \sim \psi_{\infty}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/6b820c78cd08c17eb34a294dd60eccb0969ec6018314e8a0f36e87ac6ea9460d.png" src="_images/6b820c78cd08c17eb34a294dd60eccb0969ec6018314e8a0f36e87ac6ea9460d.png" />
+<img alt="_images/85f0f5d1a210a6cf859675918e6e660f7ee9b6d2bd0588a5522e173638950929.png" src="_images/85f0f5d1a210a6cf859675918e6e660f7ee9b6d2bd0588a5522e173638950929.png" />
 </div>
 </div>
 <p>Now the  differences in the observed distributions at <span class="math notranslate nohighlight">\(T, T'\)</span> and <span class="math notranslate nohighlight">\(T''\)</span> come entirely from random fluctuations due to the finite sample size.</p>

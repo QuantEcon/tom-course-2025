@@ -545,28 +545,28 @@ and iterates to find a fixed point.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 25 is 0.15110983702984004.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 25 is 0.1511123629533042.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 50 is 0.05445948912484688.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 50 is 0.05446039945934977.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 75 is 0.019627021082360585.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 75 is 0.019627349163926056.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 100 is 0.007073513959788613.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 100 is 0.007073632199308122.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 125 is 0.002549271207760384.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 125 is 0.0025493138209000676.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 150 is 0.000918748973658623.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 150 is 0.0009187643312920102.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 175 is 0.0003311141137238849.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 175 is 0.000331119648565803.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 200 is 0.00011933243949258099.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error at iteration 200 is 0.00011933443423117751.
 
 Converged in 205 iterations.
 </pre></div>
@@ -592,7 +592,7 @@ Converged in 205 iterations.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/81999f1ab858b713319646c04de80cc91271dd45ae29f1f5421f198a483458d1.png" src="_images/81999f1ab858b713319646c04de80cc91271dd45ae29f1f5421f198a483458d1.png" />
+<img alt="_images/787e235ce19ee2f38d5ff716ad4770169dd6c2f103c543dba1eb102423ecadd3.png" src="_images/787e235ce19ee2f38d5ff716ad4770169dd6c2f103c543dba1eb102423ecadd3.png" />
 </div>
 </div>
 <p>The horizontal axis is the state <span class="math notranslate nohighlight">\(x\)</span>, while the vertical axis gives <span class="math notranslate nohighlight">\(s(x)\)</span> and <span class="math notranslate nohighlight">\(\phi(x)\)</span>.</p>
@@ -676,7 +676,7 @@ diagram, setting</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/53b90afe08c6e0aabc6fb2d066b5eb476646465c58e8556ee9410be48730c2af.png" src="_images/53b90afe08c6e0aabc6fb2d066b5eb476646465c58e8556ee9410be48730c2af.png" />
+<img alt="_images/5b01db665591b5accc4eb56ef5e68452086661ddeb0a6771b3551e6cdd721a49.png" src="_images/5b01db665591b5accc4eb56ef5e68452086661ddeb0a6771b3551e6cdd721a49.png" />
 </div>
 </div>
 <p>Looking at the dynamics, we can see that</p>
@@ -726,8 +726,8 @@ choice of <span class="math notranslate nohighlight">\(\phi\)</span>.</p>
 
 <span class="n">ϕ_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;$\phi$&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ϕ_grid</span><span class="p">,</span> <span class="p">[</span><span class="n">xbar</span><span class="p">(</span><span class="n">ϕ</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">ϕ</span><span class="p">)</span> <span class="k">for</span> <span class="n">ϕ</span> <span class="ow">in</span> <span class="n">ϕ_grid</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$w^*(\phi)$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\phi$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ϕ_grid</span><span class="p">,</span> <span class="p">[</span><span class="n">xbar</span><span class="p">(</span><span class="n">ϕ</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">ϕ</span><span class="p">)</span> <span class="k">for</span> <span class="n">ϕ</span> <span class="ow">in</span> <span class="n">ϕ_grid</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$w^*(\phi)$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -735,16 +735,6 @@ choice of <span class="math notranslate nohighlight">\(\phi\)</span>.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;&gt;:9: SyntaxWarning: invalid escape sequence &#39;\p&#39;
-&lt;&gt;:10: SyntaxWarning: invalid escape sequence &#39;\p&#39;
-&lt;&gt;:9: SyntaxWarning: invalid escape sequence &#39;\p&#39;
-&lt;&gt;:10: SyntaxWarning: invalid escape sequence &#39;\p&#39;
-/tmp/ipykernel_398/3255529632.py:9: SyntaxWarning: invalid escape sequence &#39;\p&#39;
-  ax.set(xlabel=&#39;$\phi$&#39;)
-/tmp/ipykernel_398/3255529632.py:10: SyntaxWarning: invalid escape sequence &#39;\p&#39;
-  ax.plot(ϕ_grid, [xbar(ϕ) * (1 - ϕ) for ϕ in ϕ_grid], label=&#39;$w^*(\phi)$&#39;)
-</pre></div>
-</div>
 <img alt="_images/5850c2a8e83f6796973ead9dcdb053a0f034ac8049f0c0ed2f9bf5b624d7f65d.png" src="_images/5850c2a8e83f6796973ead9dcdb053a0f034ac8049f0c0ed2f9bf5b624d7f65d.png" />
 </div>
 </div>
