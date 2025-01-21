@@ -1230,7 +1230,7 @@ Let's plot the regression line $\mu_t = .0645 + 1.5995 \theta_t$  and the points
 
 ```{code-cell} ipython3
 plt.scatter(θs, μs, label=r'$\mu_t$')
-plt.plot(θs, results1.predict(X1_θ), 'grey', label='$\hat \mu_t$', linestyle='--')
+plt.plot(θs, results1.predict(X1_θ), 'grey', label=r'$\hat \mu_t$', linestyle='--')
 plt.xlabel(r'$\theta_t$')
 plt.ylabel(r'$\mu_t$')
 plt.legend()
@@ -1321,7 +1321,7 @@ X3_grid = np.column_stack((np.ones(len(θ_grid)), θ_grid, θ_grid**2))
 
 plt.scatter(θs, v_t)
 plt.plot(θ_grid, results3.predict(X3_grid), color='grey', 
-         label='$\hat v_t$', linestyle='--')
+         label=r'$\hat v_t$', linestyle='--')
 plt.axhline(V_CR, color='C1', alpha=0.5)
 
 plt.text(max(θ_grid) - max(θ_grid)*0.025, V_CR, '$V^{CR}$', color='C1', 
