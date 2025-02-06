@@ -172,7 +172,7 @@
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#robustness-as-outcome-of-a-two-person-zero-sum-game">Robustness as Outcome of a Two-Person Zero-Sum Game</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agent-2s-problem">Agent 2’s Problem</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-agent-2s-problem-to-construct-bounds-on-the-value-sets">Using Agent 2’s Problem to Construct Bounds on the Value Sets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-agent-2s-problem-to-construct-bounds-on-value-sets">Using Agent 2’s Problem to Construct Bounds on  Value Sets</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lower-bound">The Lower Bound</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-upper-bound">The Upper Bound</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reshaping-the-set-of-values">Reshaping the Set of Values</a></li>
@@ -264,25 +264,33 @@
 <span class="expanded">Hide code cell output</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quantecon in /opt/conda/envs/quantecon/lib/python3.12/site-packages (0.7.2)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Yellow">WARNING: The directory &#39;/github/home/.cache/pip&#39; or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo&#39;s -H flag.</span>
+
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numba&gt;=0.49.0 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from quantecon) (0.60.0)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting quantecon
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading quantecon-0.7.2-py3-none-any.whl.metadata (4.9 kB)
+Requirement already satisfied: numba&gt;=0.49.0 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from quantecon) (0.60.0)
 Requirement already satisfied: numpy&gt;=1.17.0 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from quantecon) (1.26.4)
 Requirement already satisfied: requests in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from quantecon) (2.32.3)
 Requirement already satisfied: scipy&gt;=1.5.0 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from quantecon) (1.13.1)
 Requirement already satisfied: sympy in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from quantecon) (1.13.2)
 Requirement already satisfied: llvmlite&lt;0.44,&gt;=0.43.0dev0 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from numba&gt;=0.49.0-&gt;quantecon) (0.43.0)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from requests-&gt;quantecon) (3.3.2)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from requests-&gt;quantecon) (3.3.2)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from requests-&gt;quantecon) (3.7)
 Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from requests-&gt;quantecon) (2.2.3)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from requests-&gt;quantecon) (2024.8.30)
 Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in /opt/conda/envs/quantecon/lib/python3.12/site-packages (from sympy-&gt;quantecon) (1.3.0)
+Downloading quantecon-0.7.2-py3-none-any.whl (215 kB)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Yellow">WARNING: Running pip as the &#39;root&#39; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: quantecon
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed quantecon-0.7.2
+<span class=" -Color -Color-Yellow">WARNING: Running pip as the &#39;root&#39; user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.</span>
 
 </pre></div>
 </div>
@@ -294,9 +302,9 @@ Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in /opt/conda/envs/quant
 <p id="index-1">This lecture modifies a Bellman equation to express a decision-maker’s doubts about  transition dynamics.</p>
 <p>His specification doubts make the decision-maker want a <em>robust</em> decision rule.</p>
 <p><em>Robust</em> means insensitive to misspecification of transition dynamics.</p>
-<p>The decision-maker has a single <em>approximating model</em>.</p>
+<p>The decision-maker has a single <em>approximating model</em> of the transition dynamics.</p>
 <p>He calls it <em>approximating</em> to acknowledge that he doesn’t completely trust it.</p>
-<p>He fears that outcomes will actually be determined by another model that he cannot describe explicitly.</p>
+<p>He fears that transition dynamics are  actually  determined by another model that he cannot describe explicitly.</p>
 <p>All that he knows is that the actual data-generating model is in some (uncountable) set of models that surrounds his approximating model.</p>
 <p>He quantifies the discrepancy between his approximating model and the genuine data-generating model by using a quantity called <em>entropy</em>.</p>
 <p>(We’ll explain what entropy means below)</p>
@@ -327,7 +335,7 @@ Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in /opt/conda/envs/quant
 <span id="rb-vec"></span><h3>Sets of Models Imply Sets Of Values<a class="headerlink" href="#sets-of-models-imply-sets-of-values" title="Permalink to this heading">#</a></h3>
 <p>Our “robust” decision-maker wants to know how well a given rule will work when he does not <em>know</em> a single transition law  <span class="math notranslate nohighlight">\(\ldots\)</span>.</p>
 <p><span class="math notranslate nohighlight">\(\ldots\)</span> he wants to know  <em>sets</em> of values that will be attained by a given decision rule <span class="math notranslate nohighlight">\(F\)</span> under a <em>set</em> of transition laws.</p>
-<p>Ultimately, he wants to design a decision rule <span class="math notranslate nohighlight">\(F\)</span> that shapes these <em>sets</em> of values in ways that he prefers.</p>
+<p>Ultimately, he wants to design a decision rule <span class="math notranslate nohighlight">\(F\)</span> that shapes the <em>set</em> of values in ways that he prefers.</p>
 <p>With this in mind, consider the following graph, which relates to a particular decision problem to be explained below</p>
 <figure class="align-default">
 <img alt="_images/kg0.png" src="_images/kg0.png" />
@@ -340,7 +348,7 @@ Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in /opt/conda/envs/quant
 <li><p><em>Entropy</em> is a non-negative number that measures the size of a set of models surrounding the decision-maker’s approximating model.</p>
 <ul>
 <li><p>Entropy is zero when the set includes only the approximating model, indicating that the decision-maker completely trusts the approximating model.</p></li>
-<li><p>Entropy is bigger, and the set of surrounding models is bigger, the less the decision-maker trusts the approximating model.</p></li>
+<li><p>Entropy is bigger, and the set of surrounding models is bigger, the less the decision-maker trusts the approximating model of the transition dynamics.</p></li>
 </ul>
 </li>
 </ul>
@@ -408,26 +416,34 @@ Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in /opt/conda/envs/quant
 <p>For now, we take <span class="math notranslate nohighlight">\(\{ w_t \} := \{ w_t \}_{t=1}^{\infty}\)</span> to be deterministic — a single fixed sequence.</p>
 <p>We also allow for <em>model uncertainty</em> on the part of the agent solving this optimization problem.</p>
 <p>In particular, the agent takes <span class="math notranslate nohighlight">\(w_t = 0\)</span> for all <span class="math notranslate nohighlight">\(t \geq 0\)</span> as a benchmark model but admits the possibility that this model might be wrong.</p>
-<p>As a consequence, she also considers a set of alternative models expressed in terms of  sequences <span class="math notranslate nohighlight">\(\{ w_t \}\)</span> that are “close” to the zero sequence.</p>
+<p>As a consequence, she also considers a set of alternative models expressed in terms of  sequences <span class="math notranslate nohighlight">\(\{ w_t \}\)</span> that are more or less “close” to the zero sequence.</p>
 <p>She seeks a policy that will do well enough for a set of alternative models whose members are pinned down by  sequences <span class="math notranslate nohighlight">\(\{ w_t \}\)</span>.</p>
-<p>Soon we’ll quantify the quality of a model specification in terms of the maximal size of the expression <span class="math notranslate nohighlight">\(\sum_{t=0}^{\infty} \beta^{t+1}w_{t+1}' w_{t+1}\)</span>.</p>
+<p>A sequence <span class="math notranslate nohighlight">\(\{ w_t \}\)</span> might represent</p>
+<ul class="simple">
+<li><p>nonlinearities absent from the approximating model</p></li>
+<li><p>time variations in parameters of the approximating model</p></li>
+<li><p>omitted state variables in the approximating model</p></li>
+<li><p>neglected history dependencies <span class="math notranslate nohighlight">\(\ldots\)</span></p></li>
+<li><p>and other potential sources of misspecification</p></li>
+</ul>
+<p>Soon we’ll quantify the quality of a model specification in terms of the maximal size of the discounted sum <span class="math notranslate nohighlight">\(\sum_{t=0}^{\infty} \beta^{t+1}w_{t+1}' w_{t+1}\)</span>.</p>
 </section>
 <section id="constructing-more-robust-policies">
 <h2>Constructing More Robust Policies<a class="headerlink" href="#constructing-more-robust-policies" title="Permalink to this heading">#</a></h2>
-<p>If our agent takes <span class="math notranslate nohighlight">\(\{ w_t \}\)</span> as a given deterministic sequence, then, drawing on intuition from earlier lectures on dynamic programming, we can anticipate Bellman equations such as</p>
+<p>If our agent takes <span class="math notranslate nohighlight">\(\{ w_t \}\)</span> as a given deterministic sequence, then, drawing on ideas in  earlier lectures on dynamic programming, we can anticipate Bellman equations such as</p>
 <div class="math notranslate nohighlight">
 \[
 J_{t-1} (x)
 = \min_u
 \{
     x' R x + u' Q u + \beta \,
-    J_t (Ax + B u + C w_t)
+    J_t (Ax + B u + C w)
 \}
 \]</div>
 <p>(Here <span class="math notranslate nohighlight">\(J\)</span> depends on <span class="math notranslate nohighlight">\(t\)</span> because the sequence <span class="math notranslate nohighlight">\(\{w_t\}\)</span> is not recursive)</p>
 <p>Our tool for studying robustness is to construct a rule that works well even if an adverse sequence <span class="math notranslate nohighlight">\(\{ w_t \}\)</span> occurs.</p>
 <p>In our framework, “adverse” means “loss increasing”.</p>
-<p>As we’ll see, this will eventually lead us to construct the Bellman equation</p>
+<p>As we’ll see, this will eventually lead us to construct a Bellman equation</p>
 <div class="math notranslate nohighlight" id="equation-rb-wcb0">
 <span class="eqno">(193)<a class="headerlink" href="#equation-rb-wcb0" title="Permalink to this equation">#</a></span>\[J (x) =
 \min_u
@@ -571,8 +587,8 @@ and initial condition <span class="math notranslate nohighlight">\(x_0 \in \math
 <span class="eqno">(203)<a class="headerlink" href="#equation-rb-pdt" title="Permalink to this equation">#</a></span>\[\beta \sum_{t=0}^{\infty} \beta^t x_t' K(F, \theta_\eta)' K(F, \theta_\eta) x_t = \eta\]</div>
 <p>Here <span class="math notranslate nohighlight">\(x_t\)</span> is given by <a class="reference internal" href="#equation-rob-lomf">(201)</a> — which in this case becomes <span class="math notranslate nohighlight">\(x_{t+1} = (A - B F + CK(F, \theta)) x_t\)</span>.</p>
 </section>
-<section id="using-agent-2s-problem-to-construct-bounds-on-the-value-sets">
-<span id="rb-a1"></span><h3>Using Agent 2’s Problem to Construct Bounds on the Value Sets<a class="headerlink" href="#using-agent-2s-problem-to-construct-bounds-on-the-value-sets" title="Permalink to this heading">#</a></h3>
+<section id="using-agent-2s-problem-to-construct-bounds-on-value-sets">
+<span id="rb-a1"></span><h3>Using Agent 2’s Problem to Construct Bounds on  Value Sets<a class="headerlink" href="#using-agent-2s-problem-to-construct-bounds-on-value-sets" title="Permalink to this heading">#</a></h3>
 <section id="the-lower-bound">
 <h4>The Lower Bound<a class="headerlink" href="#the-lower-bound" title="Permalink to this heading">#</a></h4>
 <p>Define the minimized object on the right side of problem <a class="reference internal" href="#equation-rb-a2o">(202)</a> as <span class="math notranslate nohighlight">\(R_\theta(x_0, F)\)</span>.</p>
@@ -946,7 +962,7 @@ loss minimizer.</p></li>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">γ</span> <span class="o">=</span> <span class="mf">50.0</span>
 
-<span class="n">θ</span> <span class="o">=</span> <span class="mf">0.002</span>
+<span class="n">θ</span> <span class="o">=</span> <span class="mf">0.02</span>
 <span class="n">ac</span> <span class="o">=</span> <span class="p">(</span><span class="n">a_0</span> <span class="o">-</span> <span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span>
 
 <span class="c1"># Define LQ matrices</span>
@@ -1107,25 +1123,25 @@ loss minimizer.</p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1293/154157873.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_181/3234817930.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
   return list(map(float, (value, entropy)))
-/tmp/ipykernel_1293/154157873.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+/tmp/ipykernel_181/3234817930.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
   return list(map(float, (value, entropy)))
-/tmp/ipykernel_1293/154157873.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
-  return list(map(float, (value, entropy)))
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1293/154157873.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+/tmp/ipykernel_181/3234817930.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
   return list(map(float, (value, entropy)))
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D object at 0x7fa8bad1f260&gt;]
-[&lt;matplotlib.lines.Line2D object at 0x7fa8bad1f680&gt;]
-[&lt;matplotlib.lines.Line2D object at 0x7fa8bad1fb60&gt;]
-[&lt;matplotlib.lines.Line2D object at 0x7fa8bad4c0e0&gt;]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_181/3234817930.py:51: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  return list(map(float, (value, entropy)))
 </pre></div>
 </div>
-<img alt="_images/7691c82b60cfc1c3d354f1e3763aeaf72d14f624579cfd39804e05f2a33488e3.png" src="_images/7691c82b60cfc1c3d354f1e3763aeaf72d14f624579cfd39804e05f2a33488e3.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D object at 0x787844018920&gt;]
+[&lt;matplotlib.lines.Line2D object at 0x787844146030&gt;]
+[&lt;matplotlib.lines.Line2D object at 0x787844146f30&gt;]
+[&lt;matplotlib.lines.Line2D object at 0x787844147b90&gt;]
+</pre></div>
+</div>
+<img alt="_images/ccf81841b846058be9871ccdbf7a8389eecae0f0fdbf289c66e7ecbf34a0cb6e.png" src="_images/ccf81841b846058be9871ccdbf7a8389eecae0f0fdbf289c66e7ecbf34a0cb6e.png" />
 </div>
 </div>
 <p>Here’s another such figure, with <span class="math notranslate nohighlight">\(\theta = 0.002\)</span> instead of <span class="math notranslate nohighlight">\(0.02\)</span></p>
